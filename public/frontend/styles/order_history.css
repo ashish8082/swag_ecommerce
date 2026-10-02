@@ -1,0 +1,1027 @@
+/* =========================================================
+   VIEW ORDER PAGE
+========================================================= */
+
+.view-order-page {
+    background: #f7f7f7;
+    padding: 55px 0 80px;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.vo-page-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.vo-eyebrow {
+    color: #fe4c50;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.vo-page-header h1 {
+    margin: 6px 0;
+
+    color: #222;
+
+    font-size: 30px;
+
+    font-weight: 600;
+}
+
+.vo-page-header p {
+    margin: 0;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+.vo-page-header p strong {
+    color: #555;
+}
+
+
+/* Header Buttons */
+
+.vo-header-actions {
+    display: flex;
+
+    gap: 8px;
+}
+
+.vo-back-btn,
+.vo-invoice-btn {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+    color: #555;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: .25s;
+}
+
+.vo-back-btn i,
+.vo-invoice-btn i {
+    margin-right: 5px;
+}
+
+.vo-back-btn:hover {
+    color: #fe4c50;
+
+    border-color: #fe4c50;
+
+    text-decoration: none;
+}
+
+.vo-invoice-btn {
+    color: #fff;
+
+    background: #fe4c50;
+
+    border-color: #fe4c50;
+}
+
+.vo-invoice-btn:hover {
+    background: #222;
+
+    border-color: #222;
+
+    color: #fff;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   STATUS CARD
+========================================================= */
+
+.vo-status-card {
+    background: #fff;
+
+    border: 1px solid #e7e7e7;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+}
+
+.vo-status-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+.vo-status-label {
+    display: block;
+
+    color: #aaa;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.vo-status-top h4 {
+    margin: 5px 0 0;
+
+    color: #222;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+.vo-delivered-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background: #eaf8ee;
+
+    color: #28a745;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+.vo-delivered-badge i {
+    margin-right: 5px;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.vo-timeline {
+    display: flex;
+
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.vo-step {
+    position: relative;
+
+    flex: 0 0 auto;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+.vo-step-icon {
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 9px;
+
+    background: #eee;
+
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+.vo-step.completed .vo-step-icon {
+    background: #fe4c50;
+
+    color: #fff;
+}
+
+.vo-step-content strong {
+    display: block;
+
+    color: #333;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+.vo-step-content span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #999;
+
+    font-size: 9px;
+}
+
+
+/* Connecting line */
+
+.vo-timeline-line {
+    flex: 1;
+
+    height: 2px;
+
+    margin-top: 21px;
+
+    background: #ddd;
+}
+
+.vo-timeline-line.completed {
+    background: #fe4c50;
+}
+
+
+/* =========================================================
+   COMMON CARD
+========================================================= */
+
+.vo-card {
+    background: #fff;
+
+    border: 1px solid #e7e7e7;
+
+    margin-bottom: 18px;
+}
+
+.vo-card-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 22px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.vo-card-header span {
+    color: #aaa;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.vo-card-header h3 {
+    margin: 5px 0 0;
+
+    color: #222;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+.vo-card-header > strong {
+    color: #888;
+
+    font-size: 11px;
+}
+
+.vo-header-icon {
+    color: #fe4c50;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   PRODUCTS
+========================================================= */
+
+.vo-products {
+    padding: 0 22px;
+}
+
+.vo-product {
+    display: flex;
+
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.vo-product:last-child {
+    border-bottom: 0;
+}
+
+.vo-product-image {
+    width: 90px;
+
+    height: 90px;
+
+    flex-shrink: 0;
+
+    background: #f8f8f8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 17px;
+}
+
+.vo-product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 7px;
+}
+
+.vo-product-info {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.vo-product-info > span {
+    color: #aaa;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+.vo-product-info h5 {
+    margin: 5px 0;
+
+    color: #222;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+.vo-product-info p {
+    margin: 0;
+
+    color: #999;
+
+    font-size: 10px;
+}
+
+.vo-product-meta {
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 8px;
+}
+
+.vo-product-meta span {
+    color: #999;
+
+    font-size: 10px;
+}
+
+.vo-product-meta strong {
+    color: #555;
+}
+
+.vo-product-total {
+    color: #222;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-left: 15px;
+}
+
+
+/* =========================================================
+   ADDRESS
+========================================================= */
+
+.vo-address {
+    display: flex;
+
+    align-items: flex-start;
+
+    padding: 20px 22px;
+}
+
+.vo-address-icon {
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #fff1f1;
+
+    color: #fe4c50;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 14px;
+}
+
+.vo-address h5 {
+    margin: 0 0 7px;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.vo-address p {
+    margin: 0 0 3px;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+.vo-address > div:last-child > span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #999;
+
+    font-size: 10px;
+}
+
+.vo-address > div:last-child > span i {
+    margin-right: 5px;
+
+    color: #fe4c50;
+}
+
+
+/* =========================================================
+   PAYMENT
+========================================================= */
+
+.vo-paid-badge {
+    padding: 6px 11px;
+
+    background: #eaf8ee;
+
+    color: #28a745 !important;
+
+    border-radius: 20px;
+}
+
+.vo-payment {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 22px;
+}
+
+.vo-payment-method {
+    display: flex;
+
+    align-items: center;
+}
+
+.vo-payment-icon {
+    width: 43px;
+
+    height: 43px;
+
+    border-radius: 50%;
+
+    background: #f5f5f5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #555;
+
+    margin-right: 12px;
+}
+
+.vo-payment-method span,
+.vo-payment-details span {
+    display: block;
+
+    color: #aaa;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: .8px;
+
+    margin-bottom: 4px;
+}
+
+.vo-payment-method strong {
+    display: block;
+
+    color: #333;
+
+    font-size: 12px;
+}
+
+.vo-payment-details {
+    display: flex;
+
+    gap: 30px;
+}
+
+.vo-payment-details strong {
+    color: #555;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ORDER SUMMARY
+========================================================= */
+
+.vo-summary {
+    background: #fff;
+
+    border: 1px solid #e7e7e7;
+
+    padding: 23px;
+
+    margin-bottom: 15px;
+}
+
+.vo-summary-header {
+    margin-bottom: 22px;
+}
+
+.vo-summary-header > span {
+    color: #aaa;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.vo-summary-header h3 {
+    margin: 5px 0 0;
+
+    color: #222;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+.vo-summary-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 13px;
+}
+
+.vo-summary-row span {
+    color: #777;
+
+    font-size: 12px;
+}
+
+.vo-summary-row strong {
+    color: #333;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.vo-discount {
+    color: #28a745 !important;
+}
+
+.vo-summary-divider {
+    height: 1px;
+
+    background: #eeeeee;
+
+    margin: 18px 0;
+}
+
+.vo-total-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.vo-total-row span {
+    color: #222;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.vo-total-row strong {
+    color: #fe4c50;
+
+    font-size: 24px;
+
+    font-weight: 600;
+}
+
+.vo-secure {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 18px;
+
+    color: #999;
+
+    font-size: 9px;
+}
+
+.vo-secure i {
+    color: #28a745;
+
+    margin-right: 5px;
+}
+
+
+/* =========================================================
+   DELIVERY INFO
+========================================================= */
+
+.vo-info-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    background: #fff;
+
+    border: 1px solid #e7e7e7;
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+}
+
+.vo-info-icon {
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #fff1f1;
+
+    color: #fe4c50;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 12px;
+}
+
+.vo-info-card h5 {
+    margin: 0 0 5px;
+
+    color: #333;
+
+    font-size: 13px;
+}
+
+.vo-info-card p {
+    margin: 0 0 6px;
+
+    color: #999;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+.vo-info-card strong {
+    color: #28a745;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.vo-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 15px;
+}
+
+.vo-action {
+    display: block;
+
+    padding: 12px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+    color: #555;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: .25s;
+}
+
+.vo-action i {
+    margin-right: 6px;
+}
+
+.vo-action:hover {
+    background: #222;
+
+    border-color: #222;
+
+    color: #fff;
+
+    text-decoration: none;
+}
+
+.vo-action.primary {
+    background: #fe4c50;
+
+    border-color: #fe4c50;
+
+    color: #fff;
+}
+
+.vo-action.primary:hover {
+    background: #222;
+
+    border-color: #222;
+}
+
+
+/* =========================================================
+   HELP
+========================================================= */
+
+.vo-help {
+    display: flex;
+
+    align-items: center;
+
+    padding: 18px;
+
+    background: #222;
+
+    color: #fff;
+}
+
+.vo-help-icon {
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #fe4c50;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 12px;
+}
+
+.vo-help h5 {
+    margin: 0 0 4px;
+
+    font-size: 13px;
+}
+
+.vo-help p {
+    margin: 0 0 6px;
+
+    color: #aaa;
+
+    font-size: 9px;
+}
+
+.vo-help a {
+    color: #fe4c50;
+
+    font-size: 10px;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .vo-summary {
+        margin-top: 2px;
+    }
+
+    .vo-header-actions {
+        margin-top: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .view-order-page {
+        padding: 40px 0 60px;
+    }
+
+    .vo-page-header {
+        display: block;
+    }
+
+    .vo-page-header h1 {
+        font-size: 27px;
+    }
+
+    .vo-header-actions {
+        margin-top: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .vo-status-card {
+        padding: 18px;
+    }
+
+    .vo-status-top {
+        align-items: flex-start;
+
+        display: block;
+    }
+
+    .vo-delivered-badge {
+        margin-top: 10px;
+    }
+
+    .vo-timeline {
+        overflow-x: auto;
+
+        min-width: 600px;
+    }
+
+    .vo-status-card {
+        overflow-x: auto;
+    }
+
+    .vo-card-header {
+        padding: 16px;
+    }
+
+    .vo-products {
+        padding: 0 16px;
+    }
+
+    .vo-product {
+        align-items: flex-start;
+
+        position: relative;
+    }
+
+    .vo-product-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .vo-product-info h5 {
+        font-size: 12px;
+    }
+
+    .vo-product-meta {
+        display: block;
+    }
+
+    .vo-product-meta span {
+        display: block;
+
+        margin-top: 3px;
+    }
+
+    .vo-product-total {
+        font-size: 12px;
+    }
+
+    .vo-payment {
+        display: block;
+
+        padding: 18px;
+    }
+
+    .vo-payment-details {
+        margin-top: 18px;
+
+        gap: 25px;
+    }
+
+}

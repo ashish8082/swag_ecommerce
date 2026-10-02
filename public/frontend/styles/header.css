@@ -1,0 +1,294 @@
+
+.swaj-topbar {
+    background: #29212a;
+    color: #f8eaf0;
+    padding: 11px 0;
+    font-size: 12px;
+    letter-spacing: .4px;
+}
+
+.swaj-topbar .fa-heart {
+    color: #ff8fac;
+    margin-right: 7px;
+}
+
+.swaj-topbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.swaj-account {
+    position: relative;
+    display: inline-block;
+}
+
+.swaj-account-trigger {
+    display: inline-block;
+    padding: 2px 0;
+}
+
+.swaj-account-trigger .fa-angle-down {
+    margin-left: 6px;
+}
+
+.swaj-account-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 155px;
+    background: #fff;
+    border-radius: 9px;
+    padding: 8px;
+    box-shadow: 0 8px 25px rgba(40, 20, 35, .15);
+    z-index: 1100;
+    text-align: left;
+}
+
+.swaj-account:hover .swaj-account-menu,
+.swaj-account:focus-within .swaj-account-menu {
+    display: block;
+}
+
+.swaj-account-menu a {
+    display: block;
+    color: #493641;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.swaj-account-menu a:hover {
+    background: #fff0f4;
+    color: #d94f7b;
+}
+
+/* Main navigation */
+.swaj-navbar {
+    position: relative;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 4px 22px rgba(55, 32, 45, .07);
+}
+
+.swaj-nav-inner {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.swaj-logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.swaj-logo img {
+    display: block;
+    max-width: 100px;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+/* Navigation links */
+.swaj-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.swaj-nav-links a {
+    position: relative;
+    padding: 10px 0;
+    color: #382c35;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+.swaj-nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background: #e8759a;
+    transition: width .25s ease;
+}
+
+.swaj-nav-links a:hover {
+    color: #d94f7b;
+}
+
+.swaj-nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Search, user and cart */
+.swaj-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.swaj-nav-actions > a {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #453540;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all .25s ease;
+}
+
+.swaj-nav-actions > a:hover {
+    background: #fff0f4;
+    color: #d94f7b;
+}
+
+.swaj-nav-actions i {
+    font-size: 17px;
+}
+
+.swaj-nav-actions .swaj-cart {
+    background: #fff0f4;
+    color: #d94f7b;
+}
+
+.swaj-cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    min-width: 19px;
+    height: 19px;
+    padding: 0 5px;
+    border-radius: 50px;
+    background: #df5d85;
+    color: #fff;
+    font-size: 10px;
+    line-height: 19px;
+    text-align: center;
+}
+
+/* Mobile toggle */
+.swaj-menu-toggle {
+    display: none;
+    border: 0;
+    background: #fff0f4;
+    color: #d94f7b;
+    border-radius: 9px;
+    padding: 10px 13px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .swaj-nav-inner {
+        gap: 15px;
+        min-height: 85px;
+    }
+
+    .swaj-nav-links {
+        gap: 16px;
+    }
+
+    .swaj-nav-links a {
+        font-size: 11px;
+    }
+
+    .swaj-nav-actions {
+        gap: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .swaj-topbar {
+        padding: 10px 0;
+        font-size: 10px;
+    }
+
+    .swaj-nav-inner {
+        min-height: 76px;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .swaj-logo img {
+        max-width: 78px;
+        max-height: 55px;
+    }
+
+    .swaj-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        order: 2;
+    }
+
+    .swaj-nav-actions {
+        order: 3;
+        gap: 5px;
+    }
+
+    .swaj-nav-actions > a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .swaj-nav-actions i {
+        font-size: 15px;
+    }
+
+    .swaj-nav-links {
+        display: none;
+        order: 4;
+        flex: 0 0 100%;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        border-top: 1px solid #f5e8ed;
+    }
+
+    .swaj-nav-links.show {
+        display: flex;
+    }
+
+    .swaj-nav-links a {
+        padding: 13px 8px;
+        font-size: 13px;
+        border-bottom: 1px solid #f8edf1;
+    }
+
+    .swaj-nav-links a::after {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .swaj-topbar {
+        font-size: 9px;
+    }
+
+    .swaj-nav-actions {
+        gap: 2px;
+    }
+}
