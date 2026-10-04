@@ -1,10 +1,6 @@
 <!doctype html>
 
-<html
-  lang="en"
-  class="layout-menu-fixed layout-compact"
-  data-assets-path="{{url('backend')}}/"
-  data-template="vertical-menu-template-free">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -16,7 +12,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{url('backend')}}/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="{{url('backend')}}/img/logo_1.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

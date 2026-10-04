@@ -40,13 +40,18 @@
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="layouts-without-menu.html" class="menu-link">
+                  <a href="{{url('/swaj/size')}}" class="menu-link">
                     <div class="text-truncate" data-i18n="Size">Size</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="{{url('/swaj/category')}}" class="menu-link">
                     <div class="text-truncate" data-i18n="Category">Category</div>
+                  </a>
+                </li>
+                 <li class="menu-item">
+                  <a href="{{url('/swaj/color')}}" class="menu-link">
+                    <div class="text-truncate" data-i18n="Category">Color</div>
                   </a>
                 </li>
                 <li class="menu-item">
